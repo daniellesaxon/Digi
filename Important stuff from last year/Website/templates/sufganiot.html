@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/main.css">
+    
+</head>
+<body>
+    <!--Navbar-->
+    <nav id = "navbar">
+        <a class = "button" class = "current_page" href="{{url_for('recipes')}}">Home</a>
+        <a class = "button" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </nav>
+
+    <!--recipe-->
+    <div class="main_content">
+        <div class="grid-container">
+            <div class="item1"><h1><b><hr>Hanukkah Sufganiyot</b></h1>
+                <table class="specs">
+                    <tr>
+                        <th>Servings</th>
+                        <th>Prep Time</th>
+                        <th>Difficulty</th>
+                    </tr>
+
+                    <tr>
+                        <td>15 approx</td>
+                        <td>4 hours</td>
+                        <td>Hard</td>
+                    </tr>
+                </table>
+                <hr><h3 class="section_title">Ingredients</h3>
+                <hr></div>
+            
+            <div class="item3">
+                <ul class = "ingredients">
+                    <li>400 g warm rice milk 1 minute in microwave</li>
+                    <li>75 g white sugar dissolve in milk</li>
+                    <li>3½ tsp granulated yeast add to milk and let stand for 10 minutes</li>
+                    <li>45 g margarine melt – 40 seconds in micro at 50% power</li>
+                    <li>1½ tsp vanilla essence add to margarine</li>
+                    <li>60 g honey add to margarine</li>
+                    <li>750 g high-grade flour mix all dry ingredients in a big bowl</li>
+                    <li>3 tsp cornstarch</li>
+                    <li>1 tsp salt</li>
+                    <li>Oil for deep frying</li>
+                    <li>Raspberry jam</li>
+                    <li>Powdered sugar</li>
+                </ul>
+            </table>
+        </div>  
+
+            <div class="item4"><img src="static\sufganiot.jpeg" width = "100%" ALIGN = "right" alt="Vanilla Cake"></div>
+            <div class="item5"><hr><h3 class = "section_title">Directions</h3><hr>
+                <p>
+                    <ol class = "directions">
+                        <li>Heat rice milk (1 minute in microwave), dissolve sugar, add yeast and let stand for 10 minutes.</li>
+                        <li>Melt margarine (40 seconds in microwave at 50% power), add honey and vanilla</li>
+                        <li>Mix flour, cornstarch, salt in the main bowl</li>
+                        <li>To the main bowl add milk mixture and margarine mixture.</li>
+                        <li>Mix and knead for 10 minutes. Add rice milk or flour as needed to get a smooth, non-sticky dough.</li>
+                        <li>Let rise for at least 2 hours (more is OK) in an oiled bowl covered with a plastic bag, in a warm 40°C oven (if it is hot outside then you can leave it out, but still cover it)</li>
+                        <li>Divide into equal parts (50gr medium, 70gr large – the recipe makes 1.3kg), make balls with a smooth top, and put on individually cut baking paper, and cover with a towel.</li>
+                        <li>Let rise for 30-60 minutes (no more)</li>
+                        <li>Deep fry in oil 180deg. Lift with the baking paper, and gently lower into hot oil to avoid squishing the Sufgania. Turn over when one side golden brown</li>
+                        <li>Inject jam into each Sufganiya (lightly heat jam to make it easier to inject)</li>
+                        <li>Sift on powdered sugar</li>
+                    </ol>
+                </p>
+            </div>
+          </div>
+        </div>
+</body>
+
+<footer id = "bottom">
+    <a class = "button" href="{{url_for('sufganiot')}}">Back To top</a>
+</footer>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/main.css">
+    
+</head>
+<body>
+    <!--navbar-->
+    <nav id = "navbar">
+        <a class = "button" class = "current_page" href="{{url_for('recipes')}}">Home</a>
+        <a class = "button" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </nav>
+
+    <!--recipe-->
+    <div class="main_content">
+        <div class="grid-container">
+            <div class="item1"><h1><b><hr>Dumplings</b></h1>
+                <table class="specs">
+                    <tr>
+                        <th>Servings</th>
+                        <th>Prep Time</th>
+                        <th>Difficulty</th>
+                    </tr>
+
+                    <tr>
+                        <td>30 Dumplings</td>
+                        <td>90 Minutes</td>
+                        <td>Medium</td>
+                    </tr>
+                </table>
+                <hr><h3 class="section_title">Ingredients</h3>
+                <hr></div>
+            
+            <div class="item3">
+                <ul class = "ingredients">
+                    <h5>For the dumplings</h5>
+                    <li>30 Dumpling Sheets</li>
+                    <li>300g Shredded Cabbage</li>
+                    <li>2 stalks spring onion</li>
+                    <li>200g soft tofu</li>
+                    <li>4-5 finely cut or crushed garlic cloves</li>
+                    <li>2 tsp salt</li>
+                    <li>3 tbsp sesame oil</li>
+                    <h5>For the sauce</h5>
+                    <li>1/4 cup soy sauce</li>
+                    <li>1 Tbsp sweet chili sauce</li>
+                    <li>1 tsp sesame oil</li>
+                </ul>
+            </table></div>  
+            <div class="item4"><img src="static\dumplings.jpeg" width = "100%" ALIGN = "right" alt="Vanilla Cake"></div>
+            <div class="item5"><hr><h3 class = "section_title">Directions</h3><hr>
+                <p>
+                    <ol class = "directions">
+                        <li>Cut the cabbage, onion, tofu and garlic, and mix them all together.</li>
+                        <li>Add the salt and sesame oil and mix well.</li>
+                        <li>Put the filling in the dumpling sheets</li>
+                        <li>Fill the dumpling sheet on one side with a 1cm border on the side</li>
+                        <li>Close the dumplings by pinching the sheet shut so it makes a half circle</li>
+                        <li>Steam the dumplings for 20 - 25 minutes</li>
+                        <li>Wait for it to cool and serve with the sauce.</li>
+                    </ol>
+                </p></div>
+          </div>
+        </div>
+</body>
+<footer id = "bottom">
+    <a class = "button" href="{{url_for('dumplings')}}">Back To top</a>
+</footer>
+</html>

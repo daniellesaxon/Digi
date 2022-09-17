@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/main.css">
+    
+</head>
+<body>
+    <!--navbar-->
+    <nav id = "navbar">
+        <a class = "button" class = "current_page" href="{{url_for('recipes')}}">Home</a>
+        <a class = "button" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </nav>
+
+    <!--recipe-->
+    <div class="main_content">
+        <div class="grid-container">
+            <div class="item1"><h1><b><hr> Vanilla Cake</b></h1>
+                <table class="specs">
+                    <tr>
+                        <th>Servings</th>
+                        <th>Prep Time</th>
+                        <th>Difficulty</th>
+                    </tr>
+
+                    <tr>
+                        <td>8 Slices</td>
+                        <td>60 Minutes</td>
+                        <td>Easy</td>
+                    </tr>
+                </table>
+                <hr><h3 class="section_title">Ingredients</h3>
+                <hr></div>
+            
+            <div class="item3">
+                <ul class = "ingredients">
+                    <li>1 Cup soy milk</li>
+                    <li>1 tablespoon white vinegar</li>
+                    <li>½ cup oil</li>
+                    <li>1 tsp vanilla extract</li>
+                    <li>1 cup sugar</li>
+                    <li>1 ½ cups plain flour</li>
+                    <li>1 ½ tsp baking powder</li>
+                    <li>½ tsp baking soda</li>
+                    <li>¼ tsp salt</li>
+                </ul>
+            </table></div>  
+            <div class="item4"><img src="static\vanillacake.jpg" width = "100%" ALIGN = "right" alt="Vanilla Cake"></div>
+            <div class="item5"><hr><h3 class = "section_title">Directions</h3><hr>
+                <p>
+                    <ol class = "directions">
+                        <li> Preheat oven to 175°C and line 8 inch round cake pan</li>
+                        <li>Add the milk and vinegar into a large bowl and let curdle for a few minutes.</li>
+                        <li>Then add oil and vanilla extract, mix and then whisk in the sugar to dissolve</li>
+                        <li>Sift the flour, baking powder, baking soda and salt into the bowl and mix until no lumps remain</li>
+                        <li>Bake in the oven for 30 – 40 minutes or until a toothpick comes out clean.</li>
+                    </ol>
+                </p></div>
+          </div>
+        </div>
+</body>
+<footer id = "bottom">
+    <a class = "button" href="{{url_for('vanilla_cake')}}">Back To top</a>
+</footer>
+</html>

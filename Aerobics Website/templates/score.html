@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+    
+</head>
+
+<body >
+    
+
+    <div class="title"><h1>Placings</h1><br><br></div>
+    
+    <div id="placings">
+    <table id="placings">
+        <th>Place</th>
+        <th>Name</th>
+        <th>Artistic</th>
+        <th>Execution</th>
+        <th>Difficulty</th>
+        <th>Score</th>
+
+        <!-- table that orders competitors by their scores -->
+        
+       
+        
+        {% for item in scores %}
+        
+        
+        <tr>
+            <td id="placing">{{ item[0] }}</td>
+            
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+            <td>{{ item[5] }}</td>
+
+        </tr>
+       
+        </script>
+        {% endfor %}
+        
+    </table>
+    {% endblock content %}
+    </div>
+</body>
+</html>

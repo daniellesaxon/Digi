@@ -1,0 +1,271 @@
+
+
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  background-color: black; 
+  color: White; 
+  }
+
+.button:hover {
+  background-color: rgb(204,153,255);
+  color: rgb(107,0,205);
+}
+
+#navbar, #bottom{
+  background-color: black;
+}
+
+#bottom {
+  text-align: center;
+  position: sticky;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+}
+
+body{
+  margin: 0px;
+  background-color:rgb(246,246,246); 
+  /*display: grid;
+  grid-template-columns: 20vw auto;
+  grid-template-rows: 12;*/
+}
+
+.main{
+  text-align:center;
+  font-family: tahoma;
+  font-weight:unset;
+}
+
+.main_content{
+  margin: 3mm;
+  font-family: tahoma;
+  font-weight:unset;
+  
+}
+
+.small title{
+  font-family: arnoldboecklin, fantasy;
+  font-style: unset;
+}
+
+.recipe {
+  margin-bottom: 26mm;
+  border-width: 2px;
+  background-color:rgb(246,246,246);
+  height: 10em;
+  position: relative ;
+  padding: 32px 32px;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  border-width: 3mm;
+  border-color: black;
+}
+
+.ingredients, .directions{
+  list-style-position: inside;
+  font-style: tahoma;
+  list-style-type: symbols("-");
+  padding: 25px;
+}
+
+ol, ul{
+  padding-bottom: -65mm;
+  border-collapse: collapse;
+  padding:10px;
+}
+
+.section_title, .item1{
+  text-align: center;
+  font-size: 2vw;
+}
+
+.recipe_image{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0mm;
+  width:100%;
+  height: 200px;
+}
+
+.recipe_image:hover {
+  opacity:60%;
+  filter: blur(0.3px);
+  transition-duration: 0.3s;
+}
+
+.recipe_name{
+  text-align: center;
+  font-size: 20px;
+  padding-left: 2mm;
+  padding-right: 2mm;
+  padding-bottom: 2mm;
+  color:rgb(44, 44, 44);
+}
+
+.recipe_image_block {
+  background-color: rgb(228, 228, 228);
+  width: 300px;
+  float: left;
+  margin: 5mm;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 20px 4px rgb(151, 151, 151);
+}
+
+#bottom_recipe_block{
+  margin-bottom: 80px;
+}
+
+.recipe_image_block:hover{
+  background-color:rgb(224, 224, 224) ;
+}
+
+.all_recipes::after {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galleryimg{
+  height: 200px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+footer{
+  position:absolute;;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.recipe_name{
+  font-family: tahoma;
+  font-weight:unset;
+}
+
+.specs{
+  width:90%;
+  margin: 5%;
+  border: 0px solid white;
+  border-collapse: collapse;
+  padding:15px;
+  font-size: 1.3vw;
+}
+
+.productimg{
+  padding: auto; 
+}
+
+.product_table{
+  width: 70%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5vw;
+}
+
+.product_table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:10px;
+  margin: auto;
+}
+
+.back_to_top{
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  background-color: black; 
+  color: White; 
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  position: relative;
+  margin-top: 10px;
+}
+
+.back_to_top:hover{
+  background-color: rgb(204,153,255);
+  color: rgb(107,0,205);
+}
+
+.grid-container{
+  display: grid;
+}
+
+.item1{
+  grid-area: header; 
+}
+
+.item3 { 
+  grid-area: main; 
+  font-size: 4vw;
+}
+
+.item4{ 
+  grid-area: right; 
+}
+
+.item5{ 
+  grid-area: footer; 
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: rgb(246,246,246);
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1mm solid black;
+}
+
+hr{
+  width: 100%;
+  height: 0.5mm;
+  background-color:rgb(198, 168, 255) ;
+  border-color: rgb(198, 168, 255);
+}
+
+h5{
+  margin: 2mm;
+}
+
+.item3{
+  font-size:1.8vw;
+  border-right: 0.5 rgb(139, 139, 139) solid;
+}
+
+.item4{
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+
+.item5{
+  font-size: 2vw;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+}

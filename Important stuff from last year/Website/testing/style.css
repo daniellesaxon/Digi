@@ -1,0 +1,43 @@
+
+
+.button {
+    
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    background-color: black; 
+    color: White; 
+  }
+
+.button:hover {
+  background-color: rgb(204,153,255);
+  color: rgb(107,0,205);
+  }
+
+#navbar, #bottom{
+    background-color: black;
+}
+
+#bottom {
+  text-align: center;
+  position: sticky;
+  position: relative;
+  
+
+}
+body{
+  margin: 0px;
+  background-color:rgb(246,246,246) ;
+}
+
+#main{
+  border-width: 2mm;
+}
+
+.main_content{
+    display: flex;
+    width: 200px;
+}

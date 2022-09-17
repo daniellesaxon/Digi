@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+
+
+<body>
+    <!--navbar-->
+    <nav id = "navbar">
+        <a class = "button" href="{{url_for('recipes')}}">Home</a>
+        <a class = "button" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </nav>
+    
+    <!--all photos-->
+    <h1 class="main">Gallery</h1>
+    <div class="main_content">
+    <h2>Cakes <br><br>
+
+        <img class= "galleryimg" src="static\blue drip cake.jpeg" alt="Blue Drip Cake">
+        <img class= "galleryimg" src="static\rainbow spiral cake.jpeg" alt="Spiral Cake">
+        <img class= "galleryimg" src="static\pallette knife mini cake.jpeg" alt="Pallete knife Cake">
+        <img class= "galleryimg" src="static\chocolate drip cake.jpeg" alt="Chocolate drip cake">
+    </h2>
+
+    <br>
+
+    <h2>
+        Cupcakes <br><br>
+        <img class= "galleryimg" src="static\top shot cupcakes form market.jpeg" alt="Cupcakes">
+        <img class= "galleryimg" src="static\pink and peach cupcakes.jpeg" alt="Cupcakes">
+        <img class= "galleryimg" src="static\green and white cupcakes.jpeg" alt="Green And White Cupcakes">
+        <img class= "galleryimg" src="static\flower pink and purple cupcakes.jpeg" alt="Flower Cupcakes">
+        <img class= "galleryimg" src="static\cupcakes from chch night market.jpeg" alt="Cupcakes">
+    </h2>
+
+    <br>
+
+    <h2>
+        Everything Else <br><br>
+        <img class= "galleryimg" src="static\cinnamon rolls.jpeg" alt="cinnamon rolls">
+        <img class= "galleryimg" src="static\foccacia.jpeg" alt="foccacia">
+        <img class= "galleryimg" src="static\Waffles.JPG" alt="Waffles">
+        <img class= "galleryimg" src="static\pattern macarons.jpeg" alt="Macarons">
+        <img class= "galleryimg" src="static\blue macarons.jpeg" alt="Macarons">
+        <img class= "galleryimg" src="static\cat macarons.jpeg" alt="Macarons">
+    </h2>
+
+</div>
+    <div id = "bottom">
+        <a class = "button" href="{{url_for('gallery')}}">Back To top</a>
+    </div>
+</body>
+</html>

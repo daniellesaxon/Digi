@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Edit competitor <br>id = {{ competitor[0] }}</h1>
+
+<form action="/competitor" method="post">
+    <button method="post" name="delete" value="{{ competitor[0] }}"> Delete competitor</button>
+    <input type="hidden" name="dodelete" value="TRUE"id="">
+</form>
+<p>
+    <form method="post", action="/competitor/{{ competitor[1] }}">
+
+
+        Name: {{ competitor[1] }}
+        <input type="hidden" name="competitor_id" value="{{ competitor[0] }}">
+        Level: {{ competitor[2] }}
+            <br><br>
+        Selected Skills: <br>
+        {% for item in selected_skills %}
+            <input type="checkbox" checked value="{{ item[0] }}" name="selected_skills"> {{ item[0] }} <br>
+        {% endfor %}
+
+        <h3>Unselected Skills</h3>
+        {% for item in unselected_skills %}
+            <input type="checkbox" value="{{ item[0] }}" name="unselected_skills">{{ item [0] }}
+            <br>
+        {% endfor %}
+        <br><input type="submit" value="Submit" id="edit_skills">
+    </form>
+    </p>
+{# jinja comment - wont be seen in final render #}
+{% endblock content %}

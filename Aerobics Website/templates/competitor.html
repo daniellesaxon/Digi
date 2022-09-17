@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+{% block content %}
+
+    <!--list the competitors information by what i got from the database-->
+    <h1>{{ competitor[1] }}</h1>
+    <div class="clickable">
+        <a class="clickable" href="/competitor/edit/{{ competitor[1] }}"><button class="dropbtn"></button>Edit Competitor</a>
+    </div>
+        <p>Score: <br><br>{{ competitor[4] }}</p><br>
+    <p>Level: <br><br>{{ competitor[3] }}</p><br>
+
+    <h3>Skills</h3> <br>
+    {% for item in skills%}
+
+    <p class="view_skills">{{ item[0] }}</p><p class="view_when_hovered">{{ item[1] }}</p>
+    {% endfor %}
+
+{% endblock content %}

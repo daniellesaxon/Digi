@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div id = "navbar">
+        <a class = "button" href="{{url_for('recipes')}}">Home</a>
+        <a class = "button" class="current_page" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </div>
+
+    <h1 class="main">Order A Product</h1>
+    <!--table fron sql-->
+    <div class="main_content">
+    <table class="product_table">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Amount of item per order</th>
+            <th>Image</th>
+
+        </tr>
+        {% for item in results %}
+        <tr>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td><img class="productimg" src="{{ item[4] }}"  width ="200" alt="Macarons"></td>
+            {% endfor %}
+        </tr>
+    </table>
+    </div>
+
+    <div id = "bottom">
+        <a class = "button" href="{{url_for('orders')}}">Back To top</a>
+    </div>
+</body>
+</html>

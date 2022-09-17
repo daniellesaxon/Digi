@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content%}
+    <!-- create a new checkbox for every skill, this will then pass the value of the skill back to flask and then the database -->
+        {% for item in skills %}
+        <form method="post" action="/judge">
+            <!-- {{ item[0] }} is skill name and [1] is skill value-->
+            <input type="checkbox" name="got_skill" id="skill_list" value="{{ item[1] }}"> {{ item[0] }} - {{ item[1] }} 
+            <!--<input type="hidden" name="skill_name" value="{{ item[0] }}">
+            <input type="hidden" name="skill_value" value="{{ item[1] }}"> -->
+            <!--<label for="got_skill" method="post"> {{ item[0] }} - {{ item[1] }} </label><br>-->
+            
+        {% endfor %}
+        <!-- getting the artistic score, sending it to flask and redirecting back to the judge page-->
+        <br><br>
+        
+            <div>
+                <label for="name">Artistic Score</label>
+                <input type="number" step="0.1" min="0" max="10" name="artistic" id="textbox" value="">
+            </div>
+            <input type="hidden" name="competitor_name", value="{{ competitor_name }}">
+            <input type="submit" value="Finish Competitor" id="submit">
+        </form>
+    {% endblock content %}
+
+
+</body>
+</html>
+
+

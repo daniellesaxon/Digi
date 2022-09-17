@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="\static\style.css">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<body>
+    <header>
+        <div id="top">Aerobic Gymnastics</div>
+    <!-- header links-->
+        <nav>
+            <ul id="navbar">
+                <li class="navbar"><a class="navitem" href="/">Home</a></li>
+                <li class="navbar"><a class="navitem" href="/competitor">Competitors</a></li>
+                <li class="navbar"><a class="navitem" href="/judge">Judge</a></li>
+                <li class="navbar"><a class="navitem" href="/score">Scores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main_content">
+        {%block content%} {%endblock%}
+    </div>
+    
+
+    <!-- footer links -->
+    <footer><p>footer</p></footer>
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+get input (how many ppl buying)
+get input (what thyere willing to pay (for in inrange (ppl))) put innto a list
+sort the list
+get amount of phone prices
+get phone prices (for i inrange)
+sort the phone price list
+
+go from end of list until you get a phone price that is queal to or less than the bidding price
+add that price to a variable
+print variable

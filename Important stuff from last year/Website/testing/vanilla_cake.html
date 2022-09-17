@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/main.css">
+    
+</head>
+<body>
+    <nav id = "navbar">
+        <a class = "button" href="{{url_for('home')}}">Home</a>
+        <a class = "button" class = "current_page" href="{{url_for('recipes')}}">Recipes</a>
+        <a class = "button" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </nav>
+
+
+    <div class = "recipe" id = vanilla_cake >
+        <h1>Vanilla Cake Recipe</h1>
+        <br>  
+        <p class = "specifications">Serves - 10 Slices</p>
+        <p class = "specifications" >Prep time - 30 minutes</p>      
+        <p class = "specifications" >Total time - 1 hour 30 minutes</p>
+        <img src="static\rsz_img-6165.jpg" width = "350" ALIGN = "right" alt="Vanilla Cake">
+
+        <h2 class = "section_title">Ingredients</h2>
+        <p>
+            <ul class = "ingredients">
+                <li>1 Cup soy milk</li>
+                <li>1 tablespoon white vinegar</li>
+                <li>½ cup oil</li>
+                <li>1 tsp vanilla extract</li>
+                <li>1 cup sugar</li>
+                <li>1 ½ cups plain flour</li>
+                <li>1 ½ tsp baking powder</li>
+                <li>½ tsp baking soda</li>
+                <li>¼ tsp salt</li>
+            </ul>
+        </p>
+        <h2 class = "section_title">Directions</h2>
+        <p>
+            <ol class = "directions">
+                <li> Preheat oven to 175°C and line 8 inch round cake pan</li>
+                <li>Add the milk and vinegar into a large bowl and let curdle for a few minutes.</li>
+                <li>Then add oil and vanilla extract, mix and then whisk in the sugar to dissolve</li>
+                <li>Sift the flour, baking powder, baking soda and salt into the bowl and mix until no lumps remain</li>
+                <li>Bake in the oven for 30 – 40 minutes or until a toothpick comes out clean.</li>
+            </ol>
+        </p>
+    </div>
+    <div id = "bottom">
+        <a class = "button" href="{{url_for('vanilla_cake')}}">Back To top</a>
+    </div>
+</body>
+</html>

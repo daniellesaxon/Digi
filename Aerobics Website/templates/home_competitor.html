@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitors</title>
+</head>
+<body>
+    {% block content %}
+    <br>
+    <h3>View/Edit Competitor:</h3>
+    <div class="dropdown">
+        <button class="dropbtn">--Select Competitor--</button>
+        <div class="dropdown-content">
+            {% for item in names %}
+            <!-- for every name it will create a new link, therefore it doesnt matter how many names are in my database -->
+                <a href="/competitor/{{ item[0] }}">{{ item[0] }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    
+        <button class="dropbtn"><a class="clickable" href="/competitor/add">Add Competitor</a></button>
+        <!--
+        {% for item in names %}
+            <a href="/competitor/{{ item[0] }}">{{ item[0] }}</a>
+        {% endfor %} 
+    -->
+    {% endblock content %}
+</body>
+</html>

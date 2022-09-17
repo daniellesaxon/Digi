@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <br>
+    <p>Select a competitor</p><br>
+    <!-- similar to the home competitor page it creates a new link for every name and redirect to it when clicked-->
+    
+    <div class="dropdown">
+        <button class="dropbtn">--Select Competitor--</button>
+        <div class="dropdown-content">
+            {% for item in names %}
+            <!-- for every name it will create a new link, therefore it doesnt matter how many names are in my database -->
+                <a href="/judge/{{ item[0] }}">{{ item[0] }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}

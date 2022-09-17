@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav id = "navbar">
+        <a class = "button" href="{{url_for('recipes')}}">Home</a>
+        <a class = "button" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </nav>
+
+    <h1 class = "main" >Vegan Recipes</h1>
+
+    <!--main content-->
+    <div class="main_content" >
+
+    <!--All recipe Cards-->  
+    <a href="{{url_for('vanilla_cake')}}"><div class="all_recipes">
+      <div class="recipe_image_block">
+        <img class="recipe_image" src="static/vanillacake.jpg" alt="Vanilla Cake" >
+        <div class = "recipe_name">Vanilla Cake</div>
+      </div>
+    </a>
+
+    <a href="{{url_for('sufganiot')}}"><div class="all_recipes">
+      <div class="recipe_image_block">
+        <img class="recipe_image" src="static\sufganiot.jpeg" alt="sufganiot" >
+        <div class = "recipe_name">Sufganiot</div>
+      </div>
+    </a>
+
+    <a href="{{url_for('chocolate_cake')}}"><div class="all_recipes">
+      <div class="recipe_image_block">
+        <img class="recipe_image" src="static\2021-07-01.jpg" alt="chocolate cake" >
+        <div class = "recipe_name">Chocolate Cupcake</div>
+      </div>
+    </a>
+    
+    <a href="{{url_for('dumplings')}}"><div class="all_recipes">
+      <div  class="recipe_image_block">
+        <img class="recipe_image" src="static/dumplings.jpeg" alt="Dumplings" >
+        <div class = "recipe_name">Dumplings</div>
+      </div>
+    </a>
+
+    <a href="{{url_for('red_velvet_cake')}}"><div class="all_recipes">
+      <div class="recipe_image_block">
+        <img class="recipe_image" src="static\redvelvet.JPG" alt="Red velvet cake" >
+        <div class = "recipe_name">Red Velvet Cake</div>
+      </div>
+    </a>
+
+    <a href="{{url_for('apple_cinnamon_cake')}}"><div class="all_recipes">
+      <div id="bottom_recipe_block" class="recipe_image_block">
+        <img class="recipe_image" src="static\apple_cinnamon.jpg" alt="apple cinnamon cake" >
+        <div class = "recipe_name">Apple Cinnamon Cake</div>
+      </div>
+    </a>
+</div> 
+</div>
+</body>
+<!--Footer-->
+<footer>
+  <a id="bottom" class = "button" href="{{url_for('recipes')}}">Back To top</a>
+</footer>
+
+</html>
+

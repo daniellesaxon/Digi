@@ -1,0 +1,14 @@
+
+{% extends "layout.html" %}
+{% block content %}
+    <form method="post", action="/competitor">
+        First Name: <input type="text" name="first_name"><br><br>
+        Last Name: <input type="text", name="last_name"><br><br>
+        Level: <input type="number" name="level" min="1", max="5", step="1" id=""><br><br>
+        
+        {% for item in skills %}
+            <input type="checkbox" name="selected_skills" value="{{ item[0] }}">{{ item[0] }} - {{ item[1] }} <br>
+        {% endfor %}
+        <input type="submit" value="Add Competitor" id="submit">
+    </form>
+{% endblock content%}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle's Recipe Book</title>
+
+    <link rel="stylesheet" href="static/main.css">
+    <!---<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">--->
+
+</head>
+
+<body>
+    <div id = "main">
+
+    <nav id = "navbar">
+        <a class = "button" class="current_page" href="{{url_for('home')}}">Home</a>
+        <a class = "button" href="{{url_for('recipes')}}">Recipes</a>
+        <a class = "button" href="{{url_for('orders')}}">Order</a>
+        <a class = "button" href="{{url_for('gallery')}}">Gallery</a>
+    </nav>
+    <h1>Recipe Book</h1>
+    <table class="w3-table-all w3-hoverable">
+        <tr>
+            <th>id</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>phone</th>
+            <th>email</th>
+        </tr>
+        {% for item in results %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+            
+            {% endfor %}
+        </tr>
+    </table>
+</div>
+<br>
+
+<br>
+<footer id = "bottom">
+    <a class = "button" href="{{url_for('home')}}">Back To top</a>
+</footer>
+</body>
+</html>
